@@ -79,7 +79,7 @@ public class case1 {
     }
 
     @Тогда("Проверка страницы банка")
-    public void проверкастраницыклиента() throws InterruptedException{
+    public void проверкастраницыбанка() throws InterruptedException{
         String name = driver.findElementByXPath("/html/body/div[2]/div[1]/div[1]/div/div[1]/ul[1]/li[1]/span[2]/span").getText();
         Assert.assertNotNull(name, "not null");
     }
